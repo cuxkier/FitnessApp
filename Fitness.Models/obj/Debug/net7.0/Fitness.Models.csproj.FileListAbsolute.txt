@@ -1,0 +1,12 @@
+C:\Users\cux\OneDrive\Pulpit\Inzynierka\Fitness\Fitness.Models\bin\Debug\net7.0\Fitness.Models.deps.json
+C:\Users\cux\OneDrive\Pulpit\Inzynierka\Fitness\Fitness.Models\bin\Debug\net7.0\Fitness.Models.dll
+C:\Users\cux\OneDrive\Pulpit\Inzynierka\Fitness\Fitness.Models\bin\Debug\net7.0\Fitness.Models.pdb
+C:\Users\cux\OneDrive\Pulpit\Inzynierka\Fitness\Fitness.Models\obj\Debug\net7.0\Fitness.Models.csproj.AssemblyReference.cache
+C:\Users\cux\OneDrive\Pulpit\Inzynierka\Fitness\Fitness.Models\obj\Debug\net7.0\Fitness.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cux\OneDrive\Pulpit\Inzynierka\Fitness\Fitness.Models\obj\Debug\net7.0\Fitness.Models.AssemblyInfoInputs.cache
+C:\Users\cux\OneDrive\Pulpit\Inzynierka\Fitness\Fitness.Models\obj\Debug\net7.0\Fitness.Models.AssemblyInfo.cs
+C:\Users\cux\OneDrive\Pulpit\Inzynierka\Fitness\Fitness.Models\obj\Debug\net7.0\Fitness.Models.csproj.CoreCompileInputs.cache
+C:\Users\cux\OneDrive\Pulpit\Inzynierka\Fitness\Fitness.Models\obj\Debug\net7.0\Fitness.Models.dll
+C:\Users\cux\OneDrive\Pulpit\Inzynierka\Fitness\Fitness.Models\obj\Debug\net7.0\refint\Fitness.Models.dll
+C:\Users\cux\OneDrive\Pulpit\Inzynierka\Fitness\Fitness.Models\obj\Debug\net7.0\Fitness.Models.pdb
+C:\Users\cux\OneDrive\Pulpit\Inzynierka\Fitness\Fitness.Models\obj\Debug\net7.0\ref\Fitness.Models.dll

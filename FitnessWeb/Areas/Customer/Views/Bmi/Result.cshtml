@@ -1,0 +1,36 @@
+﻿@*@{
+    ViewData["Title"] = "BMI Result";
+}
+
+<h2>BMI Result</h2>
+
+@if (ViewBag.BMI != null)
+{
+    <div class="alert alert-success" role="alert">
+        Your BMI is: @ViewBag.BMI
+    </div>
+
+    <div class="alert alert-info" role="alert">
+        @if (ViewBag.BMI < 18.5)
+        {
+            <p>You are underweight. You may need to increase your calorie intake.</p>
+            <p>Suggested calorie intake: 2500-3000 kcal/day</p>
+        }
+        else if (ViewBag.BMI >= 18.5 && ViewBag.BMI < 24.9)
+        {
+            <p>Your weight is normal. Keep up the good work!</p>
+            <p>Suggested calorie intake: 2000-2500 kcal/day</p>
+        }
+        else if (ViewBag.BMI >= 24.9 && ViewBag.BMI < 29.9)
+        {
+            <p>You are overweight. You may need to reduce your calorie intake.</p>
+            <p>Suggested calorie intake: 1500-2000 kcal/day</p>
+        }
+        else
+        {
+            <p>You are obese. You may need to consult a healthcare professional for personalized advice.</p>
+            <p>Suggested calorie intake: 1200-1500 kcal/day</p>
+        }
+    </div>
+}
+*@
