@@ -43,8 +43,25 @@ namespace Fitness.Areas.Customer.Controllers
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
             shoppingCart.ApplicationUserId = userId;
 
-            _unitOfWork.ShoppingCart.Add(shoppingCart);
+            ShoppingCart cartFromDb = _unitOfWork.ShoppingCart.Get(u=>u.ApplicationUserId == userId && 
+            u.DietId==shoppingCart.DietId);
+
+            if(cartFromDb != null)
+            {
+                //koszyk istnieje
+                cartFromDb.Count += shoppingCart.Count;
+                _unitOfWork.ShoppingCart.Update(cartFromDb);
+            }
+            else
+            {
+                //dodaj koszyk
+                _unitOfWork.ShoppingCart.Add(shoppingCart);
+            }
+
+            TempData["success"] = "Koszyk został zaktualizowany.";
             _unitOfWork.Save();
+
+
             return RedirectToAction(nameof(Index));
         }
 
