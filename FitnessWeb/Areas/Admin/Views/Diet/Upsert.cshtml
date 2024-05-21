@@ -41,6 +41,11 @@
                             <input type="file" name="file" class="form-control border-0 shadow" />
                             <label asp-for="Diet.ImageUrl" class=" ms-2"></label>
                         </div>
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="Diet.Price" class="form-control border-0 shadow" />
+                            <label asp-for="Diet.Price" class=" ms-2"></label>
+                            <span asp-validation-for="Diet.Price" class="text-danger"></span>
+                        </div>
                         <div class="row">
                             <div class="col-6 col-md-3">
                                 @if (Model.Diet.Id != 0)

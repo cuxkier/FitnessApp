@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-6 col-md-2 offset-lg-1 pb-1">
                         <a asp-action="Index" class="btn btn-outline-primary bg-gradient mb-5 fw-semibold btn-sm text-uppercase">
-                            <small>Back to home</small>
+                            <small>Powrót do strony głównej</small>
                         </a>
                     </div>
                 </div>
@@ -30,9 +30,9 @@
                             <span class="badge">@Model.Diet.DietsCategory.CategoryName</span>
                         </div>
                         <div class="row ps-2">
-                            <h6 class="text-dark text-opacity-50 ">Kategoria : @Model.Diet.Kcal</h6>
-                        </div>
-                       @* <div class="row ps-2">
+                            <h6 class="text-dark text-opacity-50 ">Kategoria : @Model.Diet.DietsCategory.CategoryName</h6>
+@*                        </div>
+                        <div class="row ps-2">
                             <h6 class="text-dark text-opacity-50  pb-2">
                                 List Price:
                                 <span class="text-decoration-line-through">
@@ -59,9 +59,9 @@
                                 <div>Cena</div>
                             </div>
                             <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
-                                <div>Cena</div> @*@Model.Price.ToString("c")*@
+                                    <div>@Model.Diet.Price.ToString("c", new System.Globalization.CultureInfo("pl-PL"))</div>
 
-                        </div>
+                                </div>
                         <div class="row pl-2 my-3">
                                 <p class="text-secondary lh-sm">@Html.Raw(Model.Diet.Description)</p>
                         </div>

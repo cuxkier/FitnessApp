@@ -12,6 +12,8 @@ namespace Fitness.DataAccess.Repository.IRepository
         IDietRepository Diet { get; }
         IShoppingCartRepository ShoppingCart { get; }
         IApplicationUserRepository ApplicationUser { get; }
+        IOrderDetailRepository OrderDetail { get; }
+        IOrderHeaderRepository OrderHeader { get; }
 
         void Save();
     }

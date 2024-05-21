@@ -9,9 +9,10 @@ function loadDataTable() {
         "ajax": { url: '/admin/diet/getall'},
         "columns": [
         { data: 'dietName', "width": "15%" },
-        { data: 'dietsCategory.categoryName', "width": "15%" },
-        { data: 'kcal', "width": "5%" },
-        { data: 'description', "width": "65%" },
+        { data: 'dietsCategory.categoryName', "width": "65%" },
+        { data: 'kcal', "width": "15%" },
+        { data: 'description', "width": "5%" },
+        { data: 'price', "width": "65%" },
         {
             data: 'id',
             "render": function (data) {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rfMEAWyrIW8aR/0fBusjuyBB1Zum+NfiYhRKdEaxvdQ=",
+  "Hash": "CWkvM2/QMYNU6002I6Sgbko2oOiDHf0KUJiCOsHsKkw=",
   "Source": "FitnessWeb",
   "BasePath": "_content/FitnessWeb",
   "Mode": "Default",
@@ -1105,6 +1105,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\Inzynierka\\Fitness\\FitnessWeb\\wwwroot\\images\\book.png",
+      "SourceId": "FitnessWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cux\\OneDrive\\Pulpit\\Inzynierka\\Fitness\\FitnessWeb\\wwwroot\\",
+      "BasePath": "_content/FitnessWeb",
+      "RelativePath": "images/book.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\book.png"
+    },
+    {
       "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\Inzynierka\\Fitness\\FitnessWeb\\wwwroot\\images\\diet\\0a11b444-be9c-4ecf-9088-3997bf2c6a36.jpg",
       "SourceId": "FitnessWeb",
       "SourceType": "Discovered",
@@ -1120,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\diet\\0a11b444-be9c-4ecf-9088-3997bf2c6a36.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\Inzynierka\\Fitness\\FitnessWeb\\wwwroot\\images\\diet\\2dad874b-da02-492a-a619-5cf243fb4e0b.jpg",
+      "SourceId": "FitnessWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cux\\OneDrive\\Pulpit\\Inzynierka\\Fitness\\FitnessWeb\\wwwroot\\",
+      "BasePath": "_content/FitnessWeb",
+      "RelativePath": "images/diet/2dad874b-da02-492a-a619-5cf243fb4e0b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\diet\\2dad874b-da02-492a-a619-5cf243fb4e0b.jpg"
     },
     {
       "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\Inzynierka\\Fitness\\FitnessWeb\\wwwroot\\images\\diet\\46eacb76-9a4b-4bff-9489-f07f6600ccf3.png",
@@ -1241,23 +1275,6 @@
       "OriginalItemSpec": "wwwroot\\images\\diet\\85006389-0fcc-4372-93ca-98bb0e90d1ca.jpg"
     },
     {
-      "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\Inzynierka\\Fitness\\FitnessWeb\\wwwroot\\images\\diet\\86ce634d-2106-4d05-a0a4-847b4b7357c2.jpg",
-      "SourceId": "FitnessWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\cux\\OneDrive\\Pulpit\\Inzynierka\\Fitness\\FitnessWeb\\wwwroot\\",
-      "BasePath": "_content/FitnessWeb",
-      "RelativePath": "images/diet/86ce634d-2106-4d05-a0a4-847b4b7357c2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\diet\\86ce634d-2106-4d05-a0a4-847b4b7357c2.jpg"
-    },
-    {
       "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\Inzynierka\\Fitness\\FitnessWeb\\wwwroot\\images\\diet\\952f8420-48c1-4f04-ad5d-2ecdd85ff9ca.jpg",
       "SourceId": "FitnessWeb",
       "SourceType": "Discovered",
@@ -1307,6 +1324,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\diet\\c5db1721-89e7-41c1-9f59-b8852f2448ad.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\Inzynierka\\Fitness\\FitnessWeb\\wwwroot\\images\\lawn_leaf.jpg",
+      "SourceId": "FitnessWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cux\\OneDrive\\Pulpit\\Inzynierka\\Fitness\\FitnessWeb\\wwwroot\\",
+      "BasePath": "_content/FitnessWeb",
+      "RelativePath": "images/lawn_leaf.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\lawn_leaf.jpg"
     },
     {
       "Identity": "C:\\Users\\cux\\OneDrive\\Pulpit\\Inzynierka\\Fitness\\FitnessWeb\\wwwroot\\js\\diet.js",

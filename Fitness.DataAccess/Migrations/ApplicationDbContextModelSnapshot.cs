@@ -47,8 +47,8 @@ namespace Fitness.DataAccess.Migrations
                     b.Property<int>("Kcal")
                         .HasColumnType("int");
 
-                    b.Property<int>("Price")
-                        .HasColumnType("int");
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
@@ -65,7 +65,7 @@ namespace Fitness.DataAccess.Migrations
                             DietName = "Dieta 1500kcal",
                             ImageUrl = "",
                             Kcal = 1500,
-                            Price = 0
+                            Price = 0.0
                         },
                         new
                         {
@@ -75,7 +75,7 @@ namespace Fitness.DataAccess.Migrations
                             DietName = "Dieta 2000kcal",
                             ImageUrl = "",
                             Kcal = 1500,
-                            Price = 0
+                            Price = 0.0
                         },
                         new
                         {
@@ -85,7 +85,7 @@ namespace Fitness.DataAccess.Migrations
                             DietName = "Dieta 2500kcal",
                             ImageUrl = "",
                             Kcal = 1500,
-                            Price = 0
+                            Price = 0.0
                         },
                         new
                         {
@@ -95,7 +95,7 @@ namespace Fitness.DataAccess.Migrations
                             DietName = "Dieta 3000kcal",
                             ImageUrl = "",
                             Kcal = 1500,
-                            Price = 0
+                            Price = 0.0
                         },
                         new
                         {
@@ -105,7 +105,7 @@ namespace Fitness.DataAccess.Migrations
                             DietName = "Dieta 3500kcal",
                             ImageUrl = "",
                             Kcal = 1500,
-                            Price = 0
+                            Price = 0.0
                         },
                         new
                         {
@@ -115,7 +115,7 @@ namespace Fitness.DataAccess.Migrations
                             DietName = "Dieta 4000kcal",
                             ImageUrl = "",
                             Kcal = 1500,
-                            Price = 0
+                            Price = 0.0
                         });
                 });
 
@@ -158,6 +158,95 @@ namespace Fitness.DataAccess.Migrations
                             CategoryName = "Dieta Wegańska",
                             DisplayOrder = 3
                         });
+                });
+
+            modelBuilder.Entity("Fitness.Models.OrderDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DietId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderHeaderId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DietId");
+
+                    b.HasIndex("OrderHeaderId");
+
+                    b.ToTable("OrderDetails");
+                });
+
+            modelBuilder.Entity("Fitness.Models.OrderHeader", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Carrier")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("OrderStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("OrderTotal")
+                        .HasColumnType("float");
+
+                    b.Property<string>("PaymentStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PostalCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ShippingDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("StreetAddres")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TrackingNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.ToTable("OrderHeaders");
                 });
 
             modelBuilder.Entity("Fitness.Models.ShoppingCart", b =>
@@ -422,6 +511,36 @@ namespace Fitness.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("DietsCategory");
+                });
+
+            modelBuilder.Entity("Fitness.Models.OrderDetail", b =>
+                {
+                    b.HasOne("Fitness.Models.Diet", "Diet")
+                        .WithMany()
+                        .HasForeignKey("DietId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Fitness.Models.OrderHeader", "OrderHeader")
+                        .WithMany()
+                        .HasForeignKey("OrderHeaderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Diet");
+
+                    b.Navigation("OrderHeader");
+                });
+
+            modelBuilder.Entity("Fitness.Models.OrderHeader", b =>
+                {
+                    b.HasOne("Fitness.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("ApplicationUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("Fitness.Models.ShoppingCart", b =>

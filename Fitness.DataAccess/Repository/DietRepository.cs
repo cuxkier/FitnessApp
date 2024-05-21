@@ -27,6 +27,7 @@ namespace Fitness.DataAccess.Repository
                 objFromDb.Kcal = obj.Kcal;
                 objFromDb.Description = obj.Description;
                 objFromDb.CategoryDietId = obj.CategoryDietId;
+                objFromDb.Price = obj.Price;
                 if(obj.ImageUrl != null)
                 {
                     objFromDb.ImageUrl = obj.ImageUrl;
