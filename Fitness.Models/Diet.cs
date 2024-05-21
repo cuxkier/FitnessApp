@@ -21,12 +21,14 @@ namespace Fitness.Models
         public int Kcal { get; set; }
         public string Description { get; set; }
 
+        public int Price { get; set; }
+
         public int CategoryDietId { get; set; }
         [ForeignKey("CategoryDietId")]
         [ValidateNever]
         public DietsCategory DietsCategory { get; set; }
 
         [ValidateNever]
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
     }
 }

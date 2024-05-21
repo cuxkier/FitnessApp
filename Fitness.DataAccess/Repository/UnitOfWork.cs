@@ -13,7 +13,7 @@ namespace Fitness.DataAccess.Repository
         private ApplicationDbContext _db;
 
         public IDietsCategoryRepository DietsCategory { get; private set; }
-        public IDietRepository Diets { get; private set; }
+        public IDietRepository Diet { get; private set; }
         public IShoppingCartRepository ShoppingCart { get; private set; }
         public IApplicationUserRepository ApplicationUser { get; private set; }
 
@@ -23,7 +23,7 @@ namespace Fitness.DataAccess.Repository
             ApplicationUser = new ApplicationUserRepository(_db);
             ShoppingCart = new ShoppingCartRepository(_db);
             DietsCategory = new DietsCategoryRepository(_db);
-            Diets = new DietRepository(_db);
+            Diet = new DietRepository(_db);
         }
         public IDietsCategoryRepository IDietRepository {get; private set;}
 

@@ -20,8 +20,8 @@ namespace Fitness.DataAccess.Repository
         }
         public void Update(Diet obj)
         {
-            var objFromDb = _db.Diets.FirstOrDefault(u => u.Id == obj.Id);
-            if (objFromDb == null)
+            var objFromDb = _db.Diet.FirstOrDefault(u => u.Id == obj.Id);
+            if (objFromDb != null)
             {
                 objFromDb.DietName = obj.DietName;
                 objFromDb.Kcal = obj.Kcal;

@@ -20,7 +20,7 @@ namespace Fitness.DataAccess.Repository
             _db = db;
             this.dbSet = _db.Set<T>();
             //_db.DietsCategory == dbSet
-            _db.Diets.Include(u => u.DietsCategory).Include(u => u.CategoryDietId);
+            _db.Diet.Include(u => u.DietsCategory).Include(u => u.CategoryDietId);
         }
 
         public void Add(T entity)

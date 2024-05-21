@@ -13,7 +13,7 @@ namespace Fitness.DataAccess.Data
         }
 
         public DbSet<DietsCategory> DietsCategory { get; set; }
-        public DbSet<Diet> Diets { get; set; }
+        public DbSet<Diet> Diet { get; set; }
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

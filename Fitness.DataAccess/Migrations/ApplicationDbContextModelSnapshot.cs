@@ -42,17 +42,19 @@ namespace Fitness.DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Kcal")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Price")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryDietId");
 
-                    b.ToTable("Diets");
+                    b.ToTable("Diet");
 
                     b.HasData(
                         new
@@ -62,7 +64,8 @@ namespace Fitness.DataAccess.Migrations
                             Description = "Dieta numer 1",
                             DietName = "Dieta 1500kcal",
                             ImageUrl = "",
-                            Kcal = 1500
+                            Kcal = 1500,
+                            Price = 0
                         },
                         new
                         {
@@ -71,7 +74,8 @@ namespace Fitness.DataAccess.Migrations
                             Description = "Dieta numer 2",
                             DietName = "Dieta 2000kcal",
                             ImageUrl = "",
-                            Kcal = 1500
+                            Kcal = 1500,
+                            Price = 0
                         },
                         new
                         {
@@ -80,7 +84,8 @@ namespace Fitness.DataAccess.Migrations
                             Description = "Dieta numer 3",
                             DietName = "Dieta 2500kcal",
                             ImageUrl = "",
-                            Kcal = 1500
+                            Kcal = 1500,
+                            Price = 0
                         },
                         new
                         {
@@ -89,7 +94,8 @@ namespace Fitness.DataAccess.Migrations
                             Description = "Dieta numer 3",
                             DietName = "Dieta 3000kcal",
                             ImageUrl = "",
-                            Kcal = 1500
+                            Kcal = 1500,
+                            Price = 0
                         },
                         new
                         {
@@ -98,7 +104,8 @@ namespace Fitness.DataAccess.Migrations
                             Description = "Dieta numer 3",
                             DietName = "Dieta 3500kcal",
                             ImageUrl = "",
-                            Kcal = 1500
+                            Kcal = 1500,
+                            Price = 0
                         },
                         new
                         {
@@ -107,7 +114,8 @@ namespace Fitness.DataAccess.Migrations
                             Description = "Dieta numer 3",
                             DietName = "Dieta 4000kcal",
                             ImageUrl = "",
-                            Kcal = 1500
+                            Kcal = 1500,
+                            Price = 0
                         });
                 });
 

@@ -38,7 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\images\diets\" />
+    <Folder Include="wwwroot\images\diet\" />
   </ItemGroup>
 
 </Project>

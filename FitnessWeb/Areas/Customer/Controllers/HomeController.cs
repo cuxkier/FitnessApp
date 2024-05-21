@@ -21,15 +21,15 @@ namespace Fitness.Areas.Customer.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Diet> dietsList = _unitOfWork.Diets.GetAll(includeProperties: "DietsCategory");
-            return View(dietsList);
+            IEnumerable<Diet> dietList = _unitOfWork.Diet.GetAll(includeProperties: "DietsCategory");
+            return View(dietList);
         }
 
         public IActionResult Details(int dietId)
         {
             ShoppingCart cart = new()
             {
-                Diet = _unitOfWork.Diets.Get(u => u.Id == dietId, includeProperties: "DietsCategory"),
+                Diet = _unitOfWork.Diet.Get(u => u.Id == dietId, includeProperties: "DietsCategory"),
                 Count = 1,
                 DietId = dietId
             };

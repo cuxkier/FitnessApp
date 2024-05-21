@@ -35,7 +35,7 @@
                         <div class="col-12  col-lg-5 text-center row">
                             <div class="col-3 text-md-right pt-2 pt-md-4">
                                 <h6 class="fw-semibold">
-                                    @*@item.Price.ToString("c")*@Price
+                                        @item.Diet.Price.ToString("c", new System.Globalization.CultureInfo("pl-PL"))
                                     <span class="text-muted">&nbsp;x&nbsp;</span>@item.Count
                                 </h6>
                             </div>

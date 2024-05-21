@@ -32,12 +32,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlldHNDYXRlZ29yeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cux/OneDrive/Pulpit/Inzynierka/Fitness/FitnessWeb/Areas/Admin/Views/Diets/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlldHNcSW5kZXguY3NodG1s
+[C:/Users/cux/OneDrive/Pulpit/Inzynierka/Fitness/FitnessWeb/Areas/Admin/Views/Diet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlldFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/cux/OneDrive/Pulpit/Inzynierka/Fitness/FitnessWeb/Areas/Admin/Views/Diets/Upsert.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlldHNcVXBzZXJ0LmNzaHRtbA==
+[C:/Users/cux/OneDrive/Pulpit/Inzynierka/Fitness/FitnessWeb/Areas/Admin/Views/Diet/Upsert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGlldFxVcHNlcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/cux/OneDrive/Pulpit/Inzynierka/Fitness/FitnessWeb/Areas/Admin/Views/_ViewImports.cshtml]

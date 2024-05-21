@@ -9,7 +9,7 @@ namespace Fitness.DataAccess.Repository.IRepository
     public interface IUnitOfWork
     {
         IDietsCategoryRepository DietsCategory { get; }
-        IDietRepository Diets { get; }
+        IDietRepository Diet { get; }
         IShoppingCartRepository ShoppingCart { get; }
         IApplicationUserRepository ApplicationUser { get; }
 
