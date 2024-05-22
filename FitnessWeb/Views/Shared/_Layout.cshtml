@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
     <link rel="stylesheet" href="//cdn.datatables.net/2.0.7/css/dataTables.dataTables.min.css" />
 </head>
+
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
@@ -31,8 +33,17 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Admin" asp-controller="DietsCategory" asp-action="Index">Kategorie Diet</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Nasi Dietetycy</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Kategorie diet
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Index">Kategorie diet</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                         @if (User.IsInRole(SD.Role_Admin))
                         {
@@ -55,27 +66,12 @@
                         
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Nasi trenerzy</a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Nasi dietetycy</a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Atlas ćwiczeń</a>
+                            <a class="nav-link text-dark" asp-area="Customer" asp-controller="OurDieters" asp-action="Index">Nasi dietetycy</a>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Customer" asp-controller="ExerciseAtlas" asp-action="Index">Atlas ćwiczeń</a>
                         </li>
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Diety
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Dieta pierwsza</a></li>
-                                <li><a class="dropdown-item" href="#">Dieta druga</a></li>
-                                <li><a class="dropdown-item" href="#">Dieta trzecia</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">

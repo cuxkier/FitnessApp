@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas ćwiczeń</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .exercise-card {
+            margin-bottom: 30px;
+        }
+
+        .exercise-card img {
+                height: 200px;
+                object-fit: cover;
+        }
+
+        .exercise-card .card-title,
+        .exercise-card .card-text {
+                color: black;
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FitnessWeb</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav me-auto">
+                        @*<li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Index">Strona główna</a>
+                        </li>*@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Customer" asp-controller="Bmi" asp-action="Index">Kalkulator BMI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="DietsCategory" asp-action="Index">Kategorie Diet</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Kategorie diet
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="dropdown-item" asp-area="Customer" asp-controller="DietsCategory" asp-action="Index">Kategorie diet</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        @if (User.IsInRole(SD.Role_Admin))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Zarządzanie
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="DietsCategory" asp-action="Index">Kategorie diet</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="Diet" asp-action="Index">Diety</a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        }
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Nasi trenerzy</a>
+                        <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Customer" asp-controller="OurDieters" asp-action="Index">Nasi dietetycy</a>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Customer" asp-controller="ExerciseAtlas" asp-action="Index">Atlas ćwiczeń</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Customer" asp-controller="Cart" asp-action="Index">
+                                <i class="bi bi-cart"></i>&nbsp;
+                            </a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+@*    <div class="container">
+        <main role="main" class="pb-3">
+            <partial name="_Notification" />
+            @RenderBody()
+        </main>
+    </div>*@
+
+
+    <div class="container mt-5 pt-5">
+        <h1 class="text-center mb-4">Atlas ćwiczeń</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 exercise-card">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://danceandfitness.pl/wp-content/uploads/2023/06/przysiad-bsq-kobieta-610x610.jpg" alt="Przysiad ze sztangą">
+                    <div class="card-body">
+                        <h4 class="card-title">Przysiad ze sztangą</h4>
+                        <p class="card-text">Ćwiczenie na mięśnie nóg i pośladków.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=Dy28eq2PjcM" class="btn btn-primary" target="_blank">Zobacz instruktaż</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 exercise-card">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.ymUU0DuaYan5OEx2Aw59nAAAAA?rs=1&pid=ImgDetMain" alt="Wyciskanie sztangi na ławce">
+                    <div class="card-body">
+                        <h4 class="card-title">Wyciskanie sztangi na ławce</h4>
+                        <p class="card-text">Ćwiczenie na mięśnie klatki piersiowej.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=rT7DgCr-3pg" class="btn btn-primary" target="_blank">Zobacz instruktaż</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 exercise-card">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.ObjbejQFrz-DDnwk31LxOwHaE8?rs=1&pid=ImgDetMain" alt="Martwy ciąg">
+                    <div class="card-body">
+                        <h4 class="card-title">Martwy ciąg</h4>
+                        <p class="card-text">Ćwiczenie na mięśnie pleców i nóg.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=op9kVnSso6Q" class="btn btn-primary" target="_blank">Zobacz instruktaż</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 exercise-card">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://kowalskimaciej.pl/lib/vf1emv/IMG_9486-min-j9cvil1z.JPG" alt="Pompki">
+                    <div class="card-body">
+                        <h4 class="card-title">Pompki</h4>
+                        <p class="card-text">Ćwiczenie na mięśnie klatki piersiowej, ramion i brzucha.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=IODxDxX7oi4" class="btn btn-primary" target="_blank">Zobacz instruktaż</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 exercise-card">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.qbidPvbc83_OBEj-Ip_mlgAAAA?rs=1&pid=ImgDetMain" alt="Plank">
+                    <div class="card-body">
+                        <h4 class="card-title">Plank</h4>
+                        <p class="card-text">Ćwiczenie na mięśnie brzucha i pleców.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=pSHjTRCQxIw" class="btn btn-primary" target="_blank">Zobacz instruktaż</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 exercise-card">
+                <div class="card h-100">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.nVgQ91E8Dspx-VkpZvXhGQHaFu?rs=1&pid=ImgDetMain" alt="Wiosłowanie sztangą">
+                    <div class="card-body">
+                        <h4 class="card-title">Wiosłowanie sztangą</h4>
+                        <p class="card-text">Ćwiczenie na mięśnie pleców i ramion.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=GZbfZ033f74" class="btn btn-primary" target="_blank">Zobacz instruktaż</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-sm-3">
+                <div class="row p-2">
+                    <div class="col-12 p-1">
+                        <div class="card border-0 p-3 shadow border-top border-5 rounded">
+                            <img src="https://media.istockphoto.com/id/1451157865/pl/zdj%C4%99cie/pozytywna-m%C5%82oda-doros%C5%82a-kobieta-pozuj%C4%85ca-w-kuchni.jpg?s=612x612&w=0&k=20&c=O87t_c5qIp43H9DSxhXBX57Ml85PugN7jYo39mBbAG8=" class="card-img-top rounded dietetician-img">
+                            <div class="card-body pb-0">
+                                <div class="pl-1">
+                                    <p class="card-title h5 text-dark opacity-75 text-center">Ariadna Sowa</p>
+                                </div>
+                                <div class="pl-1">
+                                    <p class="card-subtitle h15 text-center text-dark opacity-7">
+                                        <b>Doświadczenie:</b><br>20 lat<br>
+                                        <b>Ulubiony przepis:</b><br>Makaron z pietruszkowym pesto<br>
+                                        <b>Zainteresowania zawodowe:</b><br>Żywienie w chorobach przewodu pokarmowego<br>
+                                        <b>"Ulubiony" mit dietetyczny:</b><br>Ziemniaki tuczą.<br><br>
+                                        <b>Kontakt:</b><br><i class="bi bi-facebook"></i> <i class="bi bi-instagram"></i> <i class="bi bi-twitter-x"></i><br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

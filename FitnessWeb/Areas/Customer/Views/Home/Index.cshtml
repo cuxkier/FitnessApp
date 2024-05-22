@@ -1,26 +1,101 @@
-﻿@model IEnumerable<DietsCategory>
+﻿Adrianna Miemietz
+<head>
+    <style>
+        .text-bs-pink {
+            color: #e83283;
+        }
 
-<div class="row pb-3">
-    @foreach(var diet in Model)
-    {
-        <div class="col-lg-3 col-sm-6">
-            <div class="row p-2">
-                <div class="col-12 p-1">
-                    <div class="card border-0 p-3 shadow border-top border-5 rounded">
-                        <div class="card-body pb-0">
-                            <div class="pl-1">
-                                <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">@diet.CategoryName</p>
-                            </div>
-                            <div>
-                                <a asp-action="Details"
-                                asp-route-dietId="@diet.Id" class="btn btn-outline-primary bg-gradient border-0 form control">
-                                    Details
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+        .trainer-img {
+            /*width: 243px; /* Ustaw szerokość obrazków */
+            height: 30%; /* Ustaw wysokość obrazków */
+            display: block; /* Ustaw obrazki jako bloki, aby można było stosować marginesy */
+            margin: 0 auto; /* Wyśrodkuj obrazki poziomo */
+        }
+    </style>
+</head>
+<br />
+<br />
+<br />
+<br />
+<div class="row pb-2">
+    <div class="col-md-6 align-items-center">
+        <p class="h1 text-white opacity-75 text-uppercase text-center">Odżywiaj się<br /></p>
+        <p class="h1 text-bs-pink opacity-75 text-uppercase text-center">Ćwicz<br /></p>
+        <p class="h1 text-white opacity-75 text-uppercase text-center">Żyj Zdrowo<br /></p>
+        <p class="h3 text-white opacity-75 text-center">Twój indywidualny plan na wyciągnięcie ręki!</p>
+        <p class="h3 text-white opacity-75 text-center">
+            <a class="btn btn-primary bg-gradient border-0 form control">
+                Oblicz BMI
+            </a>
+            <a class="btn btn-primary bg-gradient border-0 form control">
+                Nasi dietetycy
+            </a>
+            <a class="btn btn-primary bg-gradient border-0 form control">
+                Nasi trenerzy
+            </a>
+
+        </p>
+
+    </div>
+    <div class="col-md-6">
+        <div class="card border-0 p-3 shadow border-top border-5 rounded">
+            <img src="https://img.freepik.com/darmowe-zdjecie/kobieta-je-salaty-salaty_23-2148173274.jpg?t=st=1716400728~exp=1716404328~hmac=ecbece6f0aae26cefbb246b3fcf7e0fb45fb54726967c9413a0ee46a0a01653d&w=1380" class="card-img-top rounded trainer-img">
+
+        </div>
+    </div>
+
+
+    <div>
+        <p class="h3 text-white opacity-75 text-center"><br /><br />Z nami osiągniesz swój cel!<br /><br /></p>
+    </div>
+    <div class="col-md-4 align-items-center">
+        <div class="card border-0 p-3 shadow border-top border-5 rounded">
+            <div class="card-body pb-0">
+                <div class="pl-1">
+                    <p class="card-title h5 text-white opacity-75 text-uppercase text-center">Obliczasz swoje BMI</p>
                 </div>
+                <div class="pl-1">
+                    <p class="card-subtitle h12 text-center text-dark opacity-75">
+                        <img src="https://cdn2.iconfinder.com/data/icons/miscellaneous-31/60/calculator-1024.png" class="card-img-top rounded">
+                    </p>
+                </div>
+
             </div>
         </div>
-    }
+    </div>
+    <div class="col-md-4 align-items-center">
+        <div class="card border-0 p-3 shadow border-top border-5 rounded">
+            <div class="card-body pb-0">
+                <div class="pl-1">
+                    <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">Adam Mikołajczak</p>
+                </div>
+                <div class="pl-1">
+                    <p class="card-subtitle h12 text-center text-dark opacity-75" ">
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 align-items-center">
+        <div class="card border-0 p-3 shadow border-top border-5 rounded">
+            <div class="card-body pb-0">
+                <div class="pl-1">
+                    <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">Adam Mikołajczak</p>
+                </div>
+                <div class="pl-1">
+                    <p class="card-subtitle h12 text-center text-dark opacity-75" ">
+                        <b>Doświadczenie:</b><br>5 lat<br>
+                        <b>Specjalizacja:</b><br>Trening siłowy i kondycyjny<br>
+                        <b>Ulubione ćwiczenie:</b><br>Martwy ciąg<br>
+                        <b>Kontakt:</b><br><i class="bi bi-facebook"></i> <i class="bi bi-instagram"></i> <i class="bi bi-twitter-x"></i><br>
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </div>
