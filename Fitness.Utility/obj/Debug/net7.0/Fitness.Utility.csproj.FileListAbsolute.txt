@@ -34,3 +34,15 @@ C:\Users\cux\OneDrive\Pulpit\Fitnesiara\FitnessApp\Fitness.Utility\obj\Debug\net
 C:\Users\cux\OneDrive\Pulpit\Fitnesiara\FitnessApp\Fitness.Utility\obj\Debug\net7.0\refint\Fitness.Utility.dll
 C:\Users\cux\OneDrive\Pulpit\Fitnesiara\FitnessApp\Fitness.Utility\obj\Debug\net7.0\Fitness.Utility.pdb
 C:\Users\cux\OneDrive\Pulpit\Fitnesiara\FitnessApp\Fitness.Utility\obj\Debug\net7.0\ref\Fitness.Utility.dll
+D:\fitnesiarka3\Fitness.Utility\bin\Debug\net7.0\Fitness.Utility.deps.json
+D:\fitnesiarka3\Fitness.Utility\bin\Debug\net7.0\Fitness.Utility.dll
+D:\fitnesiarka3\Fitness.Utility\bin\Debug\net7.0\Fitness.Utility.pdb
+D:\fitnesiarka3\Fitness.Utility\obj\Debug\net7.0\Fitness.Utility.csproj.AssemblyReference.cache
+D:\fitnesiarka3\Fitness.Utility\obj\Debug\net7.0\Fitness.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\fitnesiarka3\Fitness.Utility\obj\Debug\net7.0\Fitness.Utility.AssemblyInfoInputs.cache
+D:\fitnesiarka3\Fitness.Utility\obj\Debug\net7.0\Fitness.Utility.AssemblyInfo.cs
+D:\fitnesiarka3\Fitness.Utility\obj\Debug\net7.0\Fitness.Utility.csproj.CoreCompileInputs.cache
+D:\fitnesiarka3\Fitness.Utility\obj\Debug\net7.0\Fitness.Utility.dll
+D:\fitnesiarka3\Fitness.Utility\obj\Debug\net7.0\refint\Fitness.Utility.dll
+D:\fitnesiarka3\Fitness.Utility\obj\Debug\net7.0\Fitness.Utility.pdb
+D:\fitnesiarka3\Fitness.Utility\obj\Debug\net7.0\ref\Fitness.Utility.dll

@@ -757,19 +757,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cux\\.nuget\\packages\\": {}
+    "C:\\Users\\adusi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\Fitness.Utility\\Fitness.Utility.csproj",
+      "projectUniqueName": "D:\\fitnesiarka3\\Fitness.Utility\\Fitness.Utility.csproj",
       "projectName": "Fitness.Utility",
-      "projectPath": "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\Fitness.Utility\\Fitness.Utility.csproj",
-      "packagesPath": "C:\\Users\\cux\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cux\\OneDrive\\Pulpit\\Fitnesiara\\FitnessApp\\Fitness.Utility\\obj\\",
+      "projectPath": "D:\\fitnesiarka3\\Fitness.Utility\\Fitness.Utility.csproj",
+      "packagesPath": "C:\\Users\\adusi\\.nuget\\packages\\",
+      "outputPath": "D:\\fitnesiarka3\\Fitness.Utility\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\cux\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adusi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -817,7 +822,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
